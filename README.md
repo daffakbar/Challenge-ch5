@@ -2,33 +2,33 @@
 
 ## Daftar Endpoint :
 
-/users2 , method yang digunakan GET, POST
-/user2/:id , method yang digunakan PUT, DELETE
+- /users2 , method yang digunakan GET, POST
+- /user2/:id , method yang digunakan PUT, DELETE
 
 ### With Bearer Token
 
-/users , method yang digunakan GET, POST
-/user/:id , method yang digunakan PUT, DELETE (error)
+- /users , method yang digunakan GET, POST
+- /user/:id , method yang digunakan PUT, DELETE (error)
 
 ### login
 
-/login , method yang digunakan GET, POST
-view => login.ejs
+- /login , method yang digunakan GET, POST
+  view => login.ejs
 
 ### root
 
-/ , render view ejs
-view => index.ejs
+- / , render view ejs
+  view => index.ejs
 
 ### game
 
-/game , render view ejs
-view => game.ejs
+- /game , render view ejs
+  view => game.ejs
 
 ### Selain end point di atas
 
-render view ejs
-view => 404.ejs
+- render view ejs
+  view => 404.ejs
 
 ## View dokumentasi API postman
 
