@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/sign-in/"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/signin.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form action="/login" method="POST">
+        <img
+          class="mb-4"
+          src="/images/assets/img/logo.png"
+          alt=""
+          width="72"
+          height="72"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        />
+        <h1 class="h3 mb-3 fw-normal" data-aos="zoom-in" data-aos-delay="100">
+          Please sign in
+        </h1>
+        <% if(failed){%>
+        <div
+          class="alert alert-danger"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          role="alert"
+        >
+          <%= failed %>
+        </div>
+        <% } %>
+
+        <div class="form-floating" data-aos="zoom-in" data-aos-delay="200">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+            name="email"
+            value="daffa@gmail.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating" data-aos="zoom-in" data-aos-delay="200">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+            name="password"
+            value="123123"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+
+        <div class="checkbox mb-3" data-aos="zoom-in" data-aos-delay="200">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div>
+        <input
+          class="w-100 btn btn-lg btn-sigin"
+          type="submit"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          value="Sign In"
+        />
+
+        <p class="mt-5 mb-3 text-muted" data-aos="zoom-in" data-aos-delay="400">
+          &copy; Traditional Game 2021
+        </p>
+      </form>
+    </main>
+
+    <script src="/javascripts/main.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
