@@ -13,22 +13,22 @@
 ### login
 
 - /login , method yang digunakan GET, POST
-  view => login.ejs
+  - view => login.ejs
 
 ### root
 
 - / , render view ejs
-  view => index.ejs
+  - view => index.ejs
 
 ### game
 
 - /game , render view ejs
-  view => game.ejs
+  - view => game.ejs
 
 ### Selain end point di atas
 
 - render view ejs
-  view => 404.ejs
+  - view => 404.ejs
 
 ## View dokumentasi API postman
 
