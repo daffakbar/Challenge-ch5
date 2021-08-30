@@ -2,13 +2,15 @@
 
 ## Daftar Endpoint :
 
+### Tanpa Bearer Token
+
 - /users2 , method yang digunakan GET, POST
 - /user2/:id , method yang digunakan PUT, DELETE
 
 ### With Bearer Token
 
 - /users , method yang digunakan GET, POST
-- /user/:id , method yang digunakan PUT, DELETE (error)
+- /users/:id , method yang digunakan PUT, DELETE (error)
 
 ### login
 
