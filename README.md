@@ -10,7 +10,7 @@
 ### With Bearer Token
 
 - /users , method yang digunakan GET, POST
-- /users/:id , method yang digunakan PUT, DELETE (- error -)
+- /users/:id , method yang digunakan PUT, DELETE (_Error_)
 
 ### login
 
